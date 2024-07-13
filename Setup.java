@@ -23,9 +23,5 @@
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		}
 		
-		/* public void setImplicitWait() {
-		        // Set an implicit wait of 10 seconds
-		        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		    }*/
-
+		
 }
