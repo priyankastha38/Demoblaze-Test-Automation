@@ -21,7 +21,7 @@ public class Usercredentials extends Setup {
 				
 	}
 	
-	@Test (priority = 1)
+	@Test (priority = 2)
 	public void testlogin(){
 		driver.findElement(By.xpath("//a[@id='login2']")).click();
 		driver.findElement(By.xpath("//input[@id='loginusername']")).sendKeys("Priyank");
@@ -30,7 +30,7 @@ public class Usercredentials extends Setup {
 				
 	}
 	
-	@Test (priority = 2)
+	@Test (priority = 3)
 	public void monitorcategory(){
 		driver.findElement(By.xpath("//a[contains(text(),'Monitors')]")).click();
 		driver.findElement(By.xpath("//a[contains(text(),'Monitors')]")).click();
@@ -39,7 +39,7 @@ public class Usercredentials extends Setup {
 				
 	}
 	
-	@Test (priority = 3)
+	@Test (priority = 4)
 	public void addproduct(){
 		
 		driver.findElement(By.xpath("//a[contains(text(),'Samsung galaxy s6')]")).click();
@@ -50,14 +50,14 @@ public class Usercredentials extends Setup {
 	}
 	
 		
-	@Test (priority = 4)
+	@Test (priority = 5)
 	public void viewcart(){
 		driver.findElement(By.xpath("//a[@id='cartur']")).click();
 		
 	}
 	
 	
-	@Test (priority = 5)
+	@Test (priority = 6)
 	public void deleteproduct(){
 		viewcart();
 		driver.findElement(By.linkText("Delete")).click();
@@ -65,7 +65,7 @@ public class Usercredentials extends Setup {
 	
 	
 	
-	@Test (priority = 6)
+	@Test (priority = 7)
 	public void checkout(){
 		driver.findElement(By.xpath("//button[contains(text(),'Place Order')]")).click();
 		driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Priyank");
@@ -82,7 +82,7 @@ public class Usercredentials extends Setup {
 
 	}
 	
-	@Test (priority = 7)
+	@Test (priority = 8)
 	public void contact(){
 		driver.findElement(By.xpath("//a[contains(text(),'Contact')]")).click();
 		driver.findElement(By.xpath("//input[@id='recipient-email']")).sendKeys("Priyank@gmail.com");
@@ -93,13 +93,13 @@ public class Usercredentials extends Setup {
 				
 	}
 	
-	@Test (priority = 8)
+	@Test (priority = 9)
 	public void logout(){
 		driver.findElement(By.xpath("//a[@id='logout2']")).click();
 						
 	}
 			
-	@Test (priority = 9)
+	@Test (priority = 10)
 	public void aboutpage(){
 		driver.findElement(By.xpath("//a[contains(text(),'About us')]")).click();
 		driver.findElement(By.cssSelector(".vjs-big-play-button")).click();
